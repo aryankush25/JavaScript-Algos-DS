@@ -34,12 +34,15 @@ function mergeSort(arr) {
 	var arr1 = [], arr2 = [];
 	var n = Math.floor(arr.length / 2);
 
-	for (var i = 0; i < n; i++) {
-		arr1.push(arr[i]);
-	}
-	for (var i = n; i < arr.length; i++) {
-		arr2.push(arr[i]);
-	}
+	arr1 = arr.slice(0, n);
+	arr2 = arr.slice(n);
+
+	// for (var i = 0; i < n; i++) {
+	// 	arr1.push(arr[i]);
+	// }
+	// for (var i = n; i < arr.length; i++) {
+	// 	arr2.push(arr[i]);
+	// }
 
 	// console.log("----------------------------------");
 	// console.log("arr1 " + "[" + arr + "]");
